@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kathleen (Katie) Taylor: Writing &amp; Documentation Portfolio</title>
+<title>Kathleen (Katie) Taylor: Writing, Editing &amp; Documentation Portfolio</title>
 <style>
   :root {
     --navy: #1F3864;
@@ -21,10 +21,25 @@
     line-height: 1.55;
   }
   header {
-    background: var(--navy);
+    background: linear-gradient(135deg, var(--navy) 0%, #142845 100%);
     color: #fff;
-    padding: 56px 24px 48px;
+    padding: 48px 24px;
     text-align: center;
+  }
+  header .header-inner {
+    max-width: 860px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .headshot {
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--teal);
+    margin-bottom: 18px;
   }
   header h1 {
     margin: 0 0 8px;
@@ -32,10 +47,28 @@
     font-weight: 700;
   }
   header p.tagline {
-    margin: 0;
+    margin: 0 0 10px;
     font-size: 1.05rem;
     color: #cfd8e6;
     font-style: italic;
+  }
+  header .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+  header .contact-links a {
+    color: #cfd8e6;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(207, 216, 230, 0.4);
+    padding-bottom: 1px;
+  }
+  header .contact-links a:hover {
+    color: #fff;
+    border-bottom-color: #fff;
   }
   main {
     max-width: 860px;
@@ -58,10 +91,16 @@
   }
   .card {
     border: 1px solid var(--border);
+    border-left: 4px solid var(--teal);
     border-radius: 8px;
     padding: 20px 24px;
     margin-bottom: 18px;
     background: var(--light-bg);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(31, 56, 100, 0.12);
   }
   .card h3 {
     margin: 0 0 6px;
@@ -110,6 +149,35 @@
   footer a {
     color: var(--teal);
   }
+  footer .contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+    margin-bottom: 14px;
+  }
+  footer .contact-links a {
+    font-weight: 600;
+    text-decoration: none;
+  }
+  footer .contact-links a:hover {
+    text-decoration: underline;
+  }
+  a.back-to-top {
+    display: inline-block;
+    margin-top: 18px;
+    color: var(--navy);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 700;
+    border: 1px solid var(--navy);
+    border-radius: 20px;
+    padding: 6px 16px;
+  }
+  a.back-to-top:hover {
+    background: var(--navy);
+    color: #fff;
+  }
   nav.section-nav {
     display: flex;
     justify-content: center;
@@ -132,18 +200,32 @@
     background: var(--navy);
     color: #fff;
   }
+  hr.section-divider {
+    border: none;
+    height: 3px;
+    background: linear-gradient(90deg, var(--teal), var(--navy));
+    border-radius: 2px;
+    margin: 44px 0 40px;
+  }
 </style>
 </head>
 <body>
 
-<header>
-  <h1>Kathleen (Katie) Taylor</h1>
-  <p class="tagline">Technical Writer · Copywriter · Editor</p>
+<header id="top">
+  <div class="header-inner">
+    <img class="headshot" src="assets/katie_headshot.jpg" alt="Kathleen (Katie) Taylor">
+    <h1>Kathleen (Katie) Taylor</h1>
+    <p class="tagline">Technical Writer · Copywriter · Editor</p>
+    <div class="contact-links">
+      <a href="mailto:kathleen.m.taylor@icloud.com">kathleen.m.taylor@icloud.com</a>
+      <a href="https://linkedin.com/in/kathleenmakaitaylor" target="_blank">LinkedIn</a>
+    </div>
+  </div>
 </header>
 
 <nav class="section-nav">
   <a href="#technical-writing">Technical Writing Samples</a>
-  <a href="#copywriting-editing">Copywriting and Editing</a>
+  <a href="#copywriting-editing">Copywriting and Editing Samples</a>
 </nav>
 
 <main>
@@ -211,8 +293,10 @@
 
   </section>
 
+  <hr class="section-divider">
+
   <section class="samples" id="copywriting-editing">
-    <h2 class="section-title">Copywriting and Editing</h2>
+    <h2 class="section-title">Copywriting and Editing Samples</h2>
 
     <div class="card">
       <div class="meta">Newsletter Editing and Copywriting</div>
@@ -251,7 +335,12 @@
 </main>
 
 <footer>
-  <p>Kathleen (Katie) Taylor · Writing &amp; Documentation Portfolio</p>
+  <div class="contact-links">
+    <a href="mailto:kathleen.m.taylor@icloud.com">kathleen.m.taylor@icloud.com</a>
+    <a href="https://linkedin.com/in/kathleenmakaitaylor" target="_blank">LinkedIn</a>
+  </div>
+  <p>Kathleen (Katie) Taylor · Writing, Editing &amp; Documentation Portfolio</p>
+  <a class="back-to-top" href="#top">&uarr; Back to top</a>
 </footer>
 
 </body>
