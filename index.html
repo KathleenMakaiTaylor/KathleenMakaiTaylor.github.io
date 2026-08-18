@@ -110,31 +110,60 @@
   footer a {
     color: var(--teal);
   }
+  nav.section-nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    background: var(--light-bg);
+    border-bottom: 1px solid var(--border);
+    padding: 14px 24px;
+  }
+  nav.section-nav a {
+    color: var(--navy);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.92rem;
+    padding: 6px 14px;
+    border: 1px solid var(--navy);
+    border-radius: 20px;
+  }
+  nav.section-nav a:hover {
+    background: var(--navy);
+    color: #fff;
+  }
 </style>
 </head>
 <body>
 
 <header>
   <h1>Kathleen (Katie) Taylor</h1>
-  <p class="tagline">Technical Writer · Copywriter</p>
+  <p class="tagline">Technical Writer · Copywriter · Editor</p>
 </header>
+
+<nav class="section-nav">
+  <a href="#technical-writing">Technical Writing Samples</a>
+  <a href="#copywriting-editing">Copywriting and Editing</a>
+</nav>
 
 <main>
   <section class="intro">
     <h2 class="section-title">About Me</h2>
     <p>
-      I'm a writer with experience across technical and creative content, built on roles
-      spanning U.S., British, and UAE-based organizations in multicultural, multilingual
+      I'm a writer and editor with experience across technical and creative content, built on
+      roles spanning U.S., British, and UAE-based organizations in multicultural, multilingual
       environments. On the technical side, I write SOPs, process documentation, quick start
-      guides, and knowledge base content that hold up for cross-functional and global teams.
-      On the copywriting side, I've written and edited newsletters, social media content, and
-      internal communications, with an eye for tone as much as clarity. The samples below are
-      grouped into two sections, technical writing and copywriting and content, representative
-      of the range I bring to writing and documentation roles.
+      guides, and knowledge base content that hold up for cross-functional and global teams. I
+      also edit — long-form academic and professional content, contracts and terms-of-agreement
+      drafts, and presentation and onboarding materials — for clarity, structure, and accuracy.
+      On the copywriting side, I've written and edited newsletters, social media content,
+      website copy, and internal communications, with an eye for tone as much as clarity. The
+      samples below are grouped into two sections, technical writing and copywriting and
+      editing, representative of the range I bring to writing, editing, and documentation roles.
     </p>
   </section>
 
-  <section class="samples">
+  <section class="samples" id="technical-writing">
     <h2 class="section-title">Technical Writing Samples</h2>
 
     <div class="card">
@@ -182,8 +211,8 @@
 
   </section>
 
-  <section class="samples">
-    <h2 class="section-title">Copywriting and Content</h2>
+  <section class="samples" id="copywriting-editing">
+    <h2 class="section-title">Copywriting and Editing</h2>
 
     <div class="card">
       <div class="meta">Newsletter Editing and Copywriting</div>
@@ -209,7 +238,7 @@
     </div>
 
     <div class="card">
-      <div class="meta">Technical Editing</div>
+      <div class="meta">Editing</div>
       <h3>Editing Sample: Before &amp; After</h3>
       <p class="desc">Two before-and-after examples showing edits for clarity, tone, and
         structure in internal communications, with notes explaining each change.</p>
